@@ -5,6 +5,7 @@ A web crawler that uses DGII official public [webpage](https://dgii.gov.do/app/W
 **``GET /api/v1/rnc/:rnc``**
 
 Returns the information of the contributor associated with the specified RNC. **Response example:**
+
 **``HTTP status code: 200``**
 
     {
