@@ -17,7 +17,7 @@ Returns the information of the contributor associated with the specified RNC. **
 	    "Categoría":  "",
 	    "Régimen de pagos":  "NORMAL",
 	    "Estado":  "ACTIVO",
-	    "Actividad Economica":  "SERV GRALES DE LA ADM PÚBLICA (INCL. EL DESEMPEÑO DE FUNCIONES EJECUTIVAS Y LEGISLATIVAS DE ADM POR PARTE DE LAS ENTIDADES  	      DE LA A",
+	    "Actividad Economica":  "SERV GRALES DE LA ADM PÚBLICA (INCL. EL DESEMPEÑO DE FUNCIONES EJECUTIVAS Y LEGISLATIVAS DE ADM POR PARTE DE LAS ENTIDADES DE LA A",
 	    "Administracion Local":  "ADM LOCAL GGC"
     }
     }
