@@ -1,0 +1,24 @@
+{
+  "name": "dgii_crawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yordi23/DGII_Crawler.git"
+  },
+  "author": "Yordi Ogando",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yordi23/DGII_Crawler/issues"
+  },
+  "homepage": "https://github.com/Yordi23/DGII_Crawler#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "puppeteer": "^5.3.1"
+  }
+}
