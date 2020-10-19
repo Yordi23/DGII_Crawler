@@ -1,5 +1,7 @@
 const express = require("express");
+const fs = require("fs");
 const cors = require("cors");
+const marked = require("marked");
 const { getContributorDGIIData } = require("./utils/dgiiCrawler");
 
 const app = express();
@@ -9,7 +11,8 @@ app.use(cors());
 
 //---Routes---
 app.get("/", function (req, res) {
-  res.send("Hello World!!!");
+  var file = fs.readFileSync(__dirname + "/README.md", "utf8");
+  res.send(marked(file.toString()));
 });
 
 app.get("/api/v1/rnc/:rnc", async function (req, res) {
