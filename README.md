@@ -1,6 +1,13 @@
 # DGII Crawler
 A web crawler that uses DGII official public [webpage](https://dgii.gov.do/app/WebApps/ConsultasWeb2/ConsultasWeb/consultas/rnc.aspx) to retrieve registered contributors information. The project is hosted on Heroku, using the following URL you can send requests to it: [`https://dgii-crawler.herokuapp.com/`](https://dgii-crawler.herokuapp.com/).
 
+The app was made with Node.js using [puppeteer](https://www.npmjs.com/package/puppeteer) package. To run locally simply follow these steps:
+
+*On your CLI...*
+1. Run: `git clone https://github.com/Yordi23/Node.js_Course.git`
+2. Run: `npm install`
+3. Run: `npm start`
+
 ## Available Endpoint
 **``GET /api/v1/rnc/:rnc``**
 
