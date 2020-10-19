@@ -19,7 +19,7 @@ Returns the information of the contributor associated with the specified RNC. **
 	    "Estado":  "ACTIVO",
 	    "Actividad Economica":  "SERV GRALES DE LA ADM PÚBLICA (INCL. EL DESEMPEÑO DE FUNCIONES EJECUTIVAS Y LEGISLATIVAS DE ADM POR PARTE DE LAS ENTIDADES DE LA A",
 	    "Administracion Local":  "ADM LOCAL GGC"
-    }
+    	}
     }
 
 If the given RNC is not associated with any contributor it'll return a response with a **``404``** HTTP status code. **Response example:**
