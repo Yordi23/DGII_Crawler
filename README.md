@@ -11,7 +11,7 @@ The app was made with Node.js using [puppeteer](https://www.npmjs.com/package/pu
 ## Available Endpoint
 **``GET /api/v1/rnc/:rnc``**
 
-Returns the information of the contributor associated with the specified RNC. **Response example:**
+Returns the information of the contributor associated with the specified RNC. The RNC must only contain numbers. **Response example:**
 
 ``HTTP status code: 200``
 
