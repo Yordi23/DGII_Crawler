@@ -13,7 +13,7 @@ The app was made with Node.js using [puppeteer](https://www.npmjs.com/package/pu
 
 Returns the information of the contributor associated with the specified RNC. **Response example:**
 
-**``HTTP status code: 200``**
+``HTTP status code: 200``
 
     {
     "status":  "success",
@@ -31,7 +31,7 @@ Returns the information of the contributor associated with the specified RNC. **
 
 If the given RNC is not associated with any contributor it'll return a response with a **``404``** HTTP status code. **Response example:**
 
-**``HTTP status code: 404``**
+``HTTP status code: 404``
 
     {
     "status":  "success",
