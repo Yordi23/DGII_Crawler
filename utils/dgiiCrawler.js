@@ -38,12 +38,3 @@ exports.getContributorDGIIData = async (rnc) => {
 
   return data;
 };
-
-exports.isContributorRegisteredInDGII = async (rnc) => {
-  let verified = false;
-  const result = await this.getContributorDGIIData(rnc);
-
-  if (JSON.stringify(result) != JSON.stringify({})) verified = true;
-
-  return verified;
-};

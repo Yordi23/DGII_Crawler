@@ -1,9 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const {
-  isContributorRegisteredInDGII,
-  getContributorDGIIData,
-} = require("./utils/dgiiCrawler");
+const { getContributorDGIIData } = require("./utils/dgiiCrawler");
 
 const app = express();
 
@@ -18,8 +15,10 @@ app.get("/", function (req, res) {
 app.get("/api/v1/rnc/:rnc", async function (req, res) {
   try {
     const contributorData = await getContributorDGIIData(req.params.rnc);
+    const statusCode =
+      JSON.stringify(contributorData) != JSON.stringify({}) ? 200 : 404;
 
-    res.status(200).json({
+    res.status(statusCode).json({
       status: "success",
       data: contributorData,
     });
@@ -32,23 +31,11 @@ app.get("/api/v1/rnc/:rnc", async function (req, res) {
   }
 });
 
-app.get("/api/v1/rnc/:rnc/isRegistered", async function (req, res) {
-  try {
-    const isContributorRegistered = await isContributorRegisteredInDGII(
-      req.params.rnc
-    );
-
-    res.status(200).json({
-      status: "success",
-      isContributorRegistered,
-    });
-  } catch (error) {
-    console.log(error);
-    res.status(500).json({
-      status: "error",
-      message: "Something went wrong",
-    });
-  }
+app.all("*", (req, res) => {
+  res.status(404).json({
+    status: "error",
+    message: `Can't find ${req.originalUrl} on this server.`,
+  });
 });
 
 //Start server
