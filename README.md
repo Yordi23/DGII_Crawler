@@ -4,7 +4,7 @@ A web crawler that uses DGII official public [webpage](https://dgii.gov.do/app/W
 The app was made with Node.js using [puppeteer](https://www.npmjs.com/package/puppeteer) package. To run locally simply follow these steps:
 
 *On your CLI...*
-1. Run: `git clone https://github.com/Yordi23/Node.js_Course.git`
+1. Run: `git clone https://github.com/Yordi23/DGII_Crawler.git`
 2. Run: `npm install`
 3. Run: `npm start`
 
